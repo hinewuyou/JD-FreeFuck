@@ -3,7 +3,7 @@
 #Update Date:2021-1-7
 #Project Name:《京东薅羊毛》一键部署脚本，通过参与京东商城的各种活动白嫖京豆
 #本人为了懒人一键部署而写此脚本，此脚本内容涵盖编写了所有该项目所需要的环境软件包和原创一键脚本
-#此脚本核心内容来自于lxk0301大神托管至GitHub的项目，定期更新核心JavaScript脚本内容，所有京东活动脚本最终解释权归他所有
+#已变更使用仓库为https://github.com/Annyoo2021/main/scripts，此仓库为备份及修改自lxk的脚本，去除助力部分，全部内部助力。
 #此脚本环境内容来自于EvineDeng托管至GitHub的项目，使用了他提供的所有JavaScript脚本环境组件
 #适用系统：Ubuntu 20.x简体中文，本人测试环境为Ubuntu 20.04 LTS，系统装完后联网即可
 #！！！！！！请认真阅读第42~48行内容并填入对应的值，如果使用Github一键教程则不用在此手动填入了！！！！！！
@@ -35,7 +35,7 @@ EOF
 apt-get update
 apt install -y git curl nodejs npm perl moreutils
 #核心内容：
-git clone -b v3 https://gitee.com/evine/jd-base /home/myid/jd  #该项目环境作者同时在Github和码云Gitee都有托管此项目，考虑到网络因素故使用码云Gitee
+git clone -b v3 https://github.com/Annyoo2021/main/scripts /home/myid/jd  #该项目环境作者同时在Github和码云Gitee都有托管此项目，考虑到网络因素故使用码云Gitee
 cd /home/myid/jd
 mkdir config
 cp sample/config.sh.sample config/config.sh && cp sample/computer.list.sample config/crontab.list
