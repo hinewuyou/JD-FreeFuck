@@ -35,7 +35,7 @@ EOF
 apt-get update
 apt install -y git curl nodejs npm perl moreutils
 #核心内容：
-git clone -b v3 https://github.com/Annyoo2021/main/scripts /home/myid/jd  #该项目环境作者同时在Github和码云Gitee都有托管此项目，考虑到网络因素故使用码云Gitee
+git clone -b v3 https://github.com/Annyoo2021/scripts.git /home/myid/jd  #该项目环境作者同时在Github和码云Gitee都有托管此项目，考虑到网络因素故使用码云Gitee
 cd /home/myid/jd
 mkdir config
 cp sample/config.sh.sample config/config.sh && cp sample/computer.list.sample config/crontab.list
